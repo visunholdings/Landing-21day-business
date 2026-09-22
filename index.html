@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A2540">
+  <meta name="description"
+    content="AI Agent Business 21 Day cùng Trịnh Minh Hùng: chọn một việc thật, xây AI workflow, kiểm thử và vận hành có người phê duyệt.">
+  <title>AI Agent Business 21 Day | Hùng Trịnh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Montserrat:wght@600;700;800;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hung-hero.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+
+  <!--
+    KHUNG TRACKING (chưa kích hoạt). Khi có ID thật:
+    1) Xoá dòng mở comment ngay phía trên và dòng đóng comment ở cuối khối này.
+    2) Thay G-XXXXXXXXXX bằng GA4 Measurement ID, YOUR_PIXEL_ID bằng Facebook Pixel ID.
+
+    Google tag (gtag.js) - GA4:
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    Meta Pixel Code:
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+  -->
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Bỏ qua menu</a>
+  <div class="price-alert">
+    <p id="price-alert-line" class="price-alert-line">Ưu đãi có hạn · Giá này giữ tới 23:59 hôm nay, sang ngày mai tăng
+      thêm 99.000đ</p>
+    <p class="price-alert-prices"><del id="price-alert-old">5.000.000đ</del> <strong
+        id="price-alert-current">1.000.000đ</strong></p>
+  </div>
+  <div class="announcement">
+    <span>21 ngày thực hành</span><span class="announcement-dot" aria-hidden="true"></span>
+    <span>1 workflow chính</span><span class="announcement-dot" aria-hidden="true"></span>
+    <span>Có kiểm thử và người phê duyệt</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top" aria-label="AI Agent Business 21 Day - về đầu trang">
+        <span class="wordmark-program">AI AGENT BUSINESS<span class="wordmark-badge">21<small>NGÀY</small></span></span>
+        <span class="wordmark-host"><span class="wordmark-sun" aria-hidden="true"></span>Cùng Hùng Trịnh</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Điều hướng chính">
+        <a href="#program">Chương trình</a>
+        <a href="#roadmap">Lộ trình</a>
+        <a href="#outcomes">Đầu ra</a>
+        <a href="#about">Về Hùng</a>
+      </nav>
+      <a class="button button-small header-cta" href="#register">Đăng ký tham gia ngay <span
+          aria-hidden="true">↗</span></a>
+      <details class="mobile-nav">
+        <summary aria-label="Mở menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Điều hướng trên điện thoại">
+          <a href="#program">Chương trình</a>
+          <a href="#roadmap">Lộ trình 21 ngày</a>
+          <a href="#outcomes">Đầu ra</a>
+          <a href="#about">Về Hùng</a>
+          <a href="#tuition">Học phí & đăng ký</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="program-badge">
+            <span class="program-badge-icon" aria-hidden="true"></span>
+            <span class="program-badge-text">AI AGENT BUSINESS <strong>21 DAY</strong></span>
+          </div>
+          <h1 id="hero-title">Biến một việc đang làm thủ công thành <em>AI workflow</em> có thể chạy lại.</h1>
+          <p class="hero-lead">Trong 21 ngày, bạn dựng một landing chạy thật và một AI workflow có Business Brain,
+            Agent theo track, người phê duyệt, Test Log và ba lần chạy trên việc thật. Không cần code; cần công việc,
+            dữ liệu mẫu và 45–60 phút thực hành mỗi ngày.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#roadmap">Xem lộ trình 21 ngày <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="#register">Đăng ký tham gia ngay <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">Không hứa “bấm nút là ra doanh thu”. Mục tiêu là một workflow có nguồn dữ liệu, test log
+            và điểm phê duyệt rõ ràng.</p>
+          <div class="hero-proof" aria-label="Điểm nổi bật của chương trình">
+            <div><strong>21</strong><span>ngày · mỗi ngày một output</span></div>
+            <div><strong>01</strong><span>workflow chính cho việc thật</span></div>
+            <div><strong>7 · 14 · 21</strong><span>mốc review & demo</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="assets/hung-hero.jpg" width="1800" height="1350" alt="Trịnh Minh Hùng tại một sự kiện về AI"
+              fetchpriority="high">
+            <div class="hero-image-shade"></div>
+            <div class="photo-caption"><span class="caption-line"></span> TRỊNH MINH HÙNG · CEO & AI TRAINER</div>
+          </div>
+          <div class="hero-float">
+            <span class="float-kicker">ĐÍCH ĐẾN CỦA 21 NGÀY</span>
+            <strong>Một workflow có thể kiểm tra, dùng lại và cải thiện.</strong>
+            <div class="mini-flow"><span>Input</span><i>→</i><span>Agent</span><i>→</i><span>Người
+                duyệt</span><i>→</i><span>Output</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-horizon" aria-hidden="true"></div>
+    </section>
+
+    <section class="section problem-section" id="program" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-intro intro-split">
+          <div>
+            <p class="eyebrow">BÀI TOÁN CỦA CHỦ DOANH NGHIỆP</p>
+            <h2 id="problem-title">Đã dùng AI.<br>Nhưng cách làm việc <span class="text-blue">vẫn chưa đổi.</span></h2>
+          </div>
+          <p>Bạn có thể đã thử ChatGPT, lưu nhiều prompt và thấy AI trả lời khá tốt. Nhưng khi quay lại công việc, dữ
+            liệu vẫn rải rác, mọi người vẫn hỏi lại từ đầu và bạn vẫn phải tự ghép từng bước.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card"><span class="card-index">01</span>
+            <h3>Việc lặp lại vẫn nằm trên bàn bạn</h3>
+            <p>Tìm tài liệu, tổng hợp báo cáo, soạn phản hồi hoặc kiểm tra cùng một loại việc mỗi tuần.</p>
+          </article>
+          <article class="problem-card"><span class="card-index">02</span>
+            <h3>AI trả lời, nhưng không theo quy trình</h3>
+            <p>Mỗi lần hỏi là một lần giải thích lại bối cảnh. Đầu ra khó giao cho người khác chạy tiếp.</p>
+          </article>
+          <article class="problem-card"><span class="card-index">03</span>
+            <h3>Chưa có cách kiểm soát chất lượng</h3>
+            <p>Không rõ Agent lấy thông tin từ đâu, xử lý sai khi nào và ai là người phê duyệt cuối.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section example-section" aria-labelledby="example-title">
+      <div class="container example-grid">
+        <div class="example-copy">
+          <p class="eyebrow eyebrow-on-dark">MỘT VÍ DỤ MINH HỌA</p>
+          <h2 id="example-title">Bắt đầu từ <em>một việc thật,</em> không bắt đầu từ tool.</h2>
+          <p>Giả sử đội ngũ thường xuyên hỏi cách xử lý một tình huống vận hành. Thay vì tìm trong nhiều file rồi trả
+            lời thủ công, bạn có thể thiết kế workflow hỗ trợ tra cứu SOP.</p>
+          <p class="example-disclaimer">Đây là sơ đồ minh họa cách học, không phải kết quả đã đạt của học viên.</p>
+        </div>
+        <div class="workflow-card">
+          <div class="workflow-topline"><span class="live-dot"></span> WORKFLOW MẪU · OPERATIONS/SOP</div>
+          <div class="workflow-step"><span class="step-no">01</span>
+            <div><strong>Câu hỏi & dữ liệu đầu vào</strong><small>Nhân sự gửi tình huống cần xử lý.</small></div>
+          </div>
+          <div class="workflow-connector"></div>
+          <div class="workflow-step"><span class="step-no">02</span>
+            <div><strong>Agent tra nguồn đã duyệt</strong><small>Đối chiếu SOP, trích nguồn, báo thiếu dữ liệu khi
+                cần.</small></div>
+          </div>
+          <div class="workflow-connector"></div>
+          <div class="workflow-step workflow-review"><span class="step-no">03</span>
+            <div><strong>Người phụ trách kiểm tra</strong><small>Duyệt hoặc sửa checklist trước khi đưa vào việc
+                thật.</small></div>
+          </div>
+          <div class="workflow-connector"></div>
+          <div class="workflow-step"><span class="step-no">04</span>
+            <div><strong>Đầu ra & run log</strong><small>Checklist dùng được, có dấu vết để cải thiện lần sau.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method-section" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-intro centered">
+          <p class="eyebrow">CƠ CHẾ THỰC HÀNH</p>
+          <h2 id="method-title">Mỗi ngày một nhiệm vụ.<br><span class="text-blue">Mỗi nhiệm vụ một đầu ra.</span></h2>
+          <p>Không cần hoàn thành mọi thứ trong một buổi. Bạn đi theo nhịp 21 ngày, nộp sản phẩm đã làm và biết rõ bước
+            nào cần sửa.</p>
+        </div>
+        <div class="method-grid">
+          <div class="method-card"><span>01</span>
+            <h3>Nhận task</h3>
+            <p>Hướng dẫn ngắn, một mục tiêu và một đầu ra cụ thể cho ngày đó.</p>
+          </div>
+          <div class="method-card"><span>02</span>
+            <h3>Làm trên việc thật</h3>
+            <p>Áp dụng vào tài liệu, dữ liệu mẫu và quy trình mà bạn có quyền sử dụng.</p>
+          </div>
+          <div class="method-card"><span>03</span>
+            <h3>Nộp & nhận trạng thái</h3>
+            <p>PASS khi đủ tiêu chí; REVISE phải sửa và nộp lại; BLOCKED cần được gỡ vướng trước khi tiếp tục.</p>
+          </div>
+          <div class="method-card"><span>04</span>
+            <h3>Review theo mốc</h3>
+            <p>Ngày 7, 14 và 21 nhìn lại chất lượng workflow, test và demo.</p>
+          </div>
+        </div>
+        <div class="method-note"><span class="note-icon" aria-hidden="true">↗</span>
+          <p><strong>Nhịp đề xuất:</strong> dành khoảng 45–60 phút thực hành mỗi ngày. Để hoàn thành, bạn phải nộp đủ
+            21/21 nhiệm vụ, sửa bài REVISE đến khi PASS, demo workflow và nộp video feedback ngày 21.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap-section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="section-intro intro-split">
+          <div>
+            <p class="eyebrow">LỘ TRÌNH 21 NGÀY</p>
+            <h2 id="roadmap-title">Từ landing chạy thật đến<br><span class="text-blue">workflow có bằng chứng.</span></h2>
+          </div>
+          <p>Ba tuần đi theo một mạch liên tục: dựng nền và kiểm chứng, xây Agent và kiểm thử, sau đó đưa workflow vào
+            việc thật để đo kết quả và demo.</p>
+        </div>
+        <div class="phase-grid phase-grid-three" aria-label="Ba module của chương trình">
+          <div class="phase-card"><span>01—07</span><strong>Dựng nền & kiểm chứng</strong><small>Landing · Feedback ·
+              Business Brain · Workflow Charter</small></div>
+          <div class="phase-card"><span>08—14</span><strong>Xây Agent & kiểm thử</strong><small>Agent Spec · Run Board ·
+              Workflow v1 · Test Log</small></div>
+          <div class="phase-card phase-final"><span>15—21</span><strong>Vận hành & chứng minh</strong><small>3 run thật ·
+              Skill/Rule · Scorecard · Evidence Card</small></div>
+        </div>
+        <div class="day-accordion">
+          <details open>
+            <summary><span class="day-range">TUẦN 1 · NGÀY 01—07</span><strong>Dựng nền và kiểm chứng thị
+                trường</strong><span class="accordion-icon" aria-hidden="true">+</span></summary>
+            <ol class="day-list" start="1">
+              <li><div class="day-copy"><strong>Ngày 1: Setup công cụ, vào group và chọn mục tiêu</strong><p>Hoàn tất tài khoản AI, công cụ làm việc, nơi lưu tài liệu và quyền truy cập group hỗ trợ. Chọn một công việc lặp lại; xác định người sử dụng, input, output, người phê duyệt và thời gian xử lý hiện tại.</p><span class="day-output">Kết quả: Checklist công cụ + quyền truy cập group + Intake Card + baseline.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 2: Tạo landing page bằng AI</strong><p>Xác định mục tiêu, đối tượng đọc và hành động chính. Dùng AI hỗ trợ xây cấu trúc, viết nội dung và hoàn thiện landing page phiên bản đầu. Landing này tiếp tục được dùng ở ngày 3, 4 và 6.</p><span class="day-output">Kết quả: Landing page v1.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 3: Đưa landing page lên internet</strong><p>Hoàn thiện các thành phần cơ bản, publish và kiểm tra trên máy tính, điện thoại. Bảo đảm người dùng có thể truy cập, hiểu nội dung và thực hiện hành động chính.</p><span class="day-output">Kết quả: Link landing page public hoạt động được.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 4: Kéo traffic hoặc lấy phản hồi thật đầu tiên</strong><p>Đưa landing cho một nhóm nhỏ đúng đối tượng; ghi nhận lượt truy cập, câu hỏi, hành vi, điểm chưa hiểu và phản hồi thực tế để xác định nội dung cần điều chỉnh.</p><span class="day-output">Kết quả: Traffic/Feedback Log có bằng chứng.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 5: Xây Business Brain có nguồn</strong><p>Gom SOP, tài liệu, thông tin sản phẩm, ví dụ, quy tắc và dữ liệu liên quan. Mỗi nguồn ghi rõ nguồn gốc, quyền sử dụng, người phê duyệt và cách cập nhật.</p><span class="day-output">Kết quả: Business Brain/Knowledge Base v1.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 6: Tạo form và chuẩn hóa đầu vào theo track</strong><p>Sales tạo form thu lead và ba lead mẫu; Content tạo Content Intake Form và ba ghi chú/case/câu hỏi mẫu; Operations tạo Request/SOP Intake Form và ba tình huống vận hành mẫu. Kết nối form với landing khi phù hợp.</p><span class="day-output">Kết quả: Input Form theo track + 3 input mẫu chuẩn hóa.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 7: Review tuần 1 và chốt phạm vi workflow</strong><p>Rà lại landing, feedback, Business Brain, dữ liệu mẫu, rủi ro, owner, output và điểm người duyệt. Chỉ chuyển sang build Agent khi workflow đủ rõ.</p><span class="day-output">Kết quả: Workflow Charter đạt PASS.</span></div></li>
+            </ol>
+          </details>
+          <details>
+            <summary><span class="day-range">TUẦN 2 · NGÀY 08—14</span><strong>Xây Agent và kiểm thử end-to-end</strong><span class="accordion-icon" aria-hidden="true">+</span></summary>
+            <ol class="day-list" start="8">
+              <li><div class="day-copy"><strong>Ngày 8: Soi đối thủ, công cụ và cách làm thay thế</strong><p>Phân tích những giải pháp đang xử lý cùng bài toán; so sánh quy trình, trải nghiệm, bằng chứng, mức kiểm soát và khoảng trống workflow có thể giải quyết tốt hơn.</p><span class="day-output">Kết quả: Positioning Card.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 9: Thiết kế Agent theo track và quy tắc phê duyệt</strong><p>Xác định vai trò, mục tiêu, nguồn, bước xử lý, định dạng đầu ra và giới hạn. Sales phân loại lead và soạn follow-up; Content tạo insight, brief và bản nháp; Operations tra tài liệu, tạo checklist/báo cáo và escalation.</p><span class="day-output">Kết quả: Agent Spec + Approval Rule.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 10: Tạo Run Board hoặc CRM-lite</strong><p>Theo dõi input, người phụ trách, trạng thái, bước tiếp theo, output, người phê duyệt và kết quả từng lần chạy. Payment automation và CRM đầy đủ thuộc giai đoạn nâng cao.</p><span class="day-output">Kết quả: Run Board/CRM-lite sử dụng được.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 11: Build Agent Workflow phiên bản đầu</strong><p>Nối input từ form hoặc dữ liệu mẫu với Business Brain, Agent, người duyệt và output thành một luồng hoàn chỉnh trước khi thêm tính năng hoặc tự động hóa sâu.</p><span class="day-output">Kết quả: Workflow v1 chạy end-to-end.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 12: Test end-to-end và xử lý lỗi</strong><p>Kiểm thử ca đúng, thiếu dữ liệu, dữ liệu mâu thuẫn, yêu cầu ngoài phạm vi và hành động cần phê duyệt; ghi lại lỗi, cách sửa và bằng chứng chạy lại.</p><span class="day-output">Kết quả: Test Log + video test ngắn.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 13: Hoàn thiện Agent v1 theo track</strong><p>Tinh chỉnh instruction, nguồn dữ liệu, logic xử lý, format đầu ra và escalation. Agent phải biết khi nào xử lý, khi nào hỏi lại và khi nào chuyển người phụ trách.</p><span class="day-output">Kết quả: Agent v1 theo đúng một track.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 14: Đưa workflow vào môi trường làm việc</strong><p>Đặt Agent, Business Brain, form và Run Board vào workspace hosted/no-code; review tuần 2 và đóng các lỗi chặn trước khi chạy tác vụ thật.</p><span class="day-output">Kết quả: Working Workspace + biên bản review tuần 2.</span></div></li>
+            </ol>
+          </details>
+          <details>
+            <summary><span class="day-range">TUẦN 3 · NGÀY 15—21</span><strong>Vận hành thật và chứng minh kết quả</strong><span class="accordion-icon" aria-hidden="true">+</span></summary>
+            <ol class="day-list" start="15">
+              <li><div class="day-copy"><strong>Ngày 15: Đưa Agent vào một công việc hằng ngày</strong><p>Chạy workflow trên tối thiểu ba tác vụ thật; ghi timestamp, input, output, người duyệt, nội dung phải sửa và trạng thái cuối cùng.</p><span class="day-output">Kết quả: 3 run thật có log.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 16: Đóng gói Skill hoặc Rule tái sử dụng</strong><p>Chuyển cách làm đã kiểm thử thành hướng dẫn, template, checklist hoặc rule để có thể chạy lại và bàn giao theo cùng tiêu chuẩn.</p><span class="day-output">Kết quả: Skill/Rule v1.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 17: Tạo workflow chuyên sâu theo track, có người phê duyệt</strong><p>Sales tạo chuỗi follow-up và bản nháp tin nhắn/email; Content tạo lịch và bản nháp nội dung; Operations tạo checklist, báo cáo hoặc hướng dẫn xử lý. Người phụ trách duyệt trước khi gửi, đăng hoặc sử dụng.</p><span class="day-output">Kết quả: Track Workflow + Approval/Escalation Log.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 18: Tạo tài sản truyền thông bằng AI hoặc phương án thay thế</strong><p>Content tạo video/hình ảnh; Sales tạo video giới thiệu, sales asset hoặc nội dung follow-up; Operations tạo video hướng dẫn, sơ đồ SOP hoặc tài liệu trực quan.</p><span class="day-output">Kết quả: 1 asset video hoặc 1 đầu ra thay thế phù hợp với track.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 19: Thiết kế Agent Team cho giai đoạn tiếp theo</strong><p>Vẽ vai trò Agent, đầu vào/đầu ra, handoff, quyền truy cập và điểm người kiểm soát. Ngày này chỉ yêu cầu thiết kế, chưa bắt buộc xây Agent Team chạy thật.</p><span class="day-output">Kết quả: Agent Team Map.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 20: Đo kết quả trước–sau và lập roadmap 30 ngày</strong><p>So sánh thời gian, lỗi, chất lượng, độ nhất quán hoặc khả năng bàn giao với baseline ngày 1; xác định cải tiến tiếp theo, chỉ số và người chịu trách nhiệm.</p><span class="day-output">Kết quả: Before–After Scorecard + roadmap 30 ngày.</span></div></li>
+              <li><div class="day-copy"><strong>Ngày 21: Demo workflow, hoàn thiện Evidence Card và quay video feedback</strong><p>Trình bày luồng từ input đến output, nguồn dữ liệu, điểm người duyệt, lỗi đã xử lý, kết quả trước–sau và kế hoạch tiếp tục sử dụng. Ghi lại video demo, hoàn thiện hồ sơ bằng chứng và quay video feedback.</p><span class="day-output">Kết quả: Verified Workflow Live Package gồm video demo, Workflow Charter, Agent Spec, Test Log, Scorecard, Evidence Card, roadmap 30 ngày và video feedback.</span></div></li>
+            </ol>
+          </details>
+        </div>
+        <p class="roadmap-footnote">VPS, API, n8n/Make nâng cao, payment automation, CRM đầy đủ, auto-post, hệ thống
+          video AI nâng cao và Agent Team chạy thật thuộc Advanced Lab, không phải yêu cầu bắt buộc của Core Challenge.</p>
+      </div>
+    </section>
+
+    <section class="section completion-section" id="completion" aria-labelledby="completion-title">
+      <div class="container completion-grid">
+        <div>
+          <p class="eyebrow eyebrow-on-dark">ĐIỀU KIỆN HOÀN THÀNH</p>
+          <h2 id="completion-title">Không chỉ tham gia đủ ngày.<br><em>Phải hoàn thành đủ đầu ra.</em></h2>
+          <p>BLOCKED là trạng thái cần được hỗ trợ, không phải trạng thái hoàn thành.</p>
+        </div>
+        <ul class="completion-list">
+          <li>Hoàn thành 21/21 nhiệm vụ.</li>
+          <li>Nộp đủ 100% output bắt buộc.</li>
+          <li>Sửa bài REVISE đến khi đạt PASS.</li>
+          <li>Không còn lỗi an toàn nghiêm trọng.</li>
+          <li>Demo workflow và nộp video feedback ngày 21.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section outcomes-section" id="outcomes" aria-labelledby="outcomes-title">
+      <div class="container">
+        <div class="section-intro centered">
+          <p class="eyebrow">BỘ ĐẦU RA</p>
+          <h2 id="outcomes-title">Bạn không chỉ mang về kiến thức.<br><span class="text-blue">Bạn xây một bộ hồ sơ dùng
+              được.</span></h2>
+          <p>Những tài liệu này giúp workflow có thể được kiểm tra, bàn giao và tiếp tục cải thiện sau challenge.</p>
+        </div>
+        <div class="outcome-grid">
+          <article>
+            <span class="outcome-num">01</span>
+            <div class="outcome-graphic outcome-chip-list" aria-hidden="true">
+              <span>Landing public</span><span>Input Form</span><span>Feedback Log</span><span>Positioning Card</span>
+            </div>
+            <h3>Landing &amp; Market Validation</h3>
+            <p>Một landing page chạy thật, form theo track và bằng chứng phản hồi đầu tiên từ đúng đối tượng.</p>
+          </article>
+          <article>
+            <span class="outcome-num">02</span>
+            <div class="outcome-graphic graphic-brain" aria-hidden="true">
+              <div class="brain-sources"><span>SOP</span><span>Tài liệu</span><span>Ví dụ mẫu</span></div>
+              <div class="brain-arrow">↓</div>
+              <div class="brain-hub">Business Brain · đã duyệt nguồn</div>
+            </div>
+            <h3>Business Brain</h3>
+            <p>Knowledge Base v1 kèm danh sách nguồn, quyền sử dụng, người phê duyệt và quy tắc cập nhật.</p>
+          </article>
+          <article>
+            <span class="outcome-num">03</span>
+            <div class="outcome-graphic graphic-charter" aria-hidden="true">
+              <div class="charter-row"><span class="mock-label">Phạm vi</span><span class="mock-value">1 việc thật</span></div>
+              <div class="charter-row"><span class="mock-label">Thiết kế</span><span class="mock-value">Agent Spec</span></div>
+              <div class="charter-row"><span class="mock-label">Điểm duyệt</span><span class="mock-value">Approval Rule</span></div>
+            </div>
+            <h3>Agent Design</h3>
+            <p>Workflow Charter, Agent Spec, Approval Rule và Agent v1 được cấu hình cho đúng một track.</p>
+          </article>
+          <article>
+            <span class="outcome-num">04</span>
+            <div class="outcome-graphic outcome-chip-list" aria-hidden="true">
+              <span>Run Board</span><span>Workflow v1</span><span>Workspace</span><span>3 run thật</span><span>Skill v1</span>
+            </div>
+            <h3>Working Workflow</h3>
+            <p>Một workflow chạy end-to-end, đặt trong workspace dùng được và có tối thiểu ba lần chạy thật có log.</p>
+          </article>
+          <article>
+            <span class="outcome-num">05</span>
+            <div class="outcome-graphic graphic-test" aria-hidden="true">
+              <div class="test-row test-pass"><span class="test-dot"></span>Ca đúng · PASS</div>
+              <div class="test-row test-warn"><span class="test-dot"></span>Thiếu dữ liệu · REVISE</div>
+              <div class="test-row test-fail"><span class="test-dot"></span>Ngoài phạm vi · BLOCKED</div>
+            </div>
+            <h3>Quality &amp; Evidence</h3>
+            <p>Test Log, video test, Approval/Escalation Log và Before–After Scorecard để chứng minh chất lượng.</p>
+          </article>
+          <article>
+            <span class="outcome-num">06</span>
+            <div class="outcome-graphic graphic-evidence" aria-hidden="true">
+              <div class="evidence-check">Demo cuối chương trình</div>
+              <div class="evidence-check">Evidence Card</div>
+              <div class="evidence-check">Agent Team Map</div>
+              <div class="evidence-check">Roadmap + video feedback</div>
+            </div>
+            <h3>Verified Workflow Live Package</h3>
+            <p>Hồ sơ cuối gồm video demo, Evidence Card, Agent Team Map, roadmap 30 ngày và video feedback.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tracks-section" id="tracks" aria-labelledby="tracks-title">
+      <div class="container">
+        <div class="section-intro intro-split">
+          <div>
+            <p class="eyebrow">CHỌN MỘT HƯỚNG ỨNG DỤNG</p>
+            <h2 id="tracks-title">Một việc chạy tốt hơn<br><span class="text-blue">ba Agent làm dở.</span></h2>
+          </div>
+          <p>Mỗi học viên chọn một trong ba track và tập trung hoàn thiện một workflow chính. Track được chốt khi bài
+            toán, dữ liệu mẫu và người phê duyệt đã đủ rõ.</p>
+        </div>
+        <div class="track-grid">
+          <article class="track-card"><span class="track-tag">TRACK 01</span>
+            <h3>Sales Follow-up</h3>
+            <p>Lead → phân loại → đề xuất bước tiếp theo → soạn nháp phản hồi → người phụ trách duyệt.</p><span
+              class="track-output">Đầu ra: Lead Form, chuỗi follow-up nháp và Approval Log</span>
+          </article>
+          <article class="track-card"><span class="track-tag">TRACK 02</span>
+            <h3>Content & Insight</h3>
+            <p>Ghi chú và câu hỏi khách hàng → insight → brief → bản nháp đúng giọng → người duyệt.</p><span
+              class="track-output">Đầu ra: Content Intake, lịch nội dung và Approval Log</span>
+          </article>
+          <article class="track-card"><span class="track-tag">TRACK 03</span>
+            <h3>Operations / SOP</h3>
+            <p>Tình huống → tra Business Brain → checklist/báo cáo → người phụ trách duyệt → escalation.</p>
+            <span class="track-output">Đầu ra: SOP Intake, checklist/báo cáo và Escalation Log</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section founder-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="founder-grid">
+          <div class="founder-photo">
+            <img src="assets/hung-founder.jpg" width="1600" height="1067"
+              alt="Trịnh Minh Hùng phát biểu tại một sự kiện của doanh nghiệp" loading="lazy">
+            <div class="founder-photo-label">10 NĂM KINH DOANH THỰC CHIẾN</div>
+          </div>
+          <div class="founder-copy">
+            <p class="eyebrow">NGƯỜI ĐỒNG HÀNH</p>
+            <h2 id="about-title">Tôi là<br><span class="text-blue">Trịnh Minh Hùng.</span></h2>
+            <p class="founder-lead">CEO Visun Holdings, Co-Founder Nutrihealth — điều hành doanh nghiệp và đào tạo CEO,
+              chủ SME ứng dụng AI vào công việc hằng ngày.</p>
+            <p>Hơn 17 năm kinh nghiệm thực tiễn, trong đó khoảng 10 năm điều hành và phát triển doanh nghiệp trong lĩnh
+              vực thiết bị y tế, dược phẩm và dinh dưỡng, cùng hai lần thất bại kinh doanh khiến tôi nhìn AI rất thực
+              tế: công cụ chỉ có giá trị khi đi vào một quy trình mà người dùng hiểu và kiểm soát được.</p>
+            <ul class="founder-credentials">
+              <li>17+ năm kinh nghiệm thực tiễn</li>
+              <li>Thạc sĩ (Ths.)</li>
+              <li>CEO Visun Holdings</li>
+              <li>Co-Founder Nutrihealth</li>
+              <li>AI Trainer · Click AI Academy</li>
+              <li>Đào tạo tại Anthropic Academy</li>
+            </ul>
+            <blockquote>“Tôi không muốn bạn rời chương trình với thêm một danh sách tool. Tôi muốn bạn biết chọn một
+              việc, xây quy trình cho nó và tự kiểm chứng đầu ra.”</blockquote>
+            <p class="founder-signature">— Hùng Trịnh</p>
+          </div>
+        </div>
+        <div class="founder-proof">
+          <p class="founder-proof-label">HOẠT ĐỘNG THỰC TẾ</p>
+          <div class="founder-proof-grid">
+            <figure>
+              <img src="assets/hung-proof-gala.jpg" width="1100" height="733"
+                alt="Trịnh Minh Hùng phát biểu tại Gala Dinner Nutrihealth" loading="lazy">
+              <figcaption>Chia sẻ tại Gala Dinner Nutrihealth, Hạ Long 2024</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-award.jpg" width="1100" height="825"
+                alt="Trịnh Minh Hùng nhận giải tại lễ bế giảng khóa học AI" loading="lazy">
+              <figcaption>Nhận giải tại lễ bế giảng khóa 21 ngày tự động hóa AI</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-boardroom.jpg" width="1100" height="825"
+                alt="Trịnh Minh Hùng họp chiến lược cùng đội ngũ Nutrihealth" loading="lazy">
+              <figcaption>Họp chiến lược cùng đội ngũ tại Nutrihealth</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-teamaward.jpg" width="1100" height="733"
+                alt="Trịnh Minh Hùng trao thưởng cho đội ngũ tại Gala Dinner" loading="lazy">
+              <figcaption>Trao thưởng đội ngũ tại Gala Dinner Nutrihealth</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-aisummit.jpg" width="1100" height="825"
+                alt="Trịnh Minh Hùng tham dự Enterprise AI Summit 2026" loading="lazy">
+              <figcaption>Tham dự Enterprise AI Summit 2026 · Base.vn</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-conviction.jpg" width="825" height="1100"
+                alt="Trịnh Minh Hùng tham dự sự kiện Conviction 2026" loading="lazy">
+              <figcaption>Tham dự The Special AI Forum · Conviction 2026</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-pti.jpg" width="1100" height="825"
+                alt="Trịnh Minh Hùng được vinh danh tại lễ tôn vinh Sự học Doanh nhân PTI Convocation" loading="lazy">
+              <figcaption>Vinh danh tại Lễ tôn vinh Sự học Doanh nhân · PTI Convocation</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-teambuilding.jpg" width="1100" height="825"
+                alt="Trịnh Minh Hùng team building cùng đội ngũ Nutrihealth" loading="lazy">
+              <figcaption>Team building cùng đội ngũ Nutrihealth</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hung-proof-yearend.jpg" width="1100" height="733"
+                alt="Trịnh Minh Hùng tại Year End Party Nutrihealth" loading="lazy">
+              <figcaption>Year End Party cùng đội ngũ Nutrihealth</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section" aria-labelledby="fit-title">
+      <div class="container">
+        <div class="section-intro centered">
+          <p class="eyebrow">ĐẦU VÀO CẦN CÓ</p>
+          <h2 id="fit-title">Chương trình phù hợp nếu bạn<br><span class="text-blue">có một việc thật để làm.</span>
+          </h2>
+        </div>
+        <div class="fit-grid">
+          <div class="fit-panel fit-yes">
+            <h3>Phù hợp nếu bạn...</h3>
+            <ul class="check-list">
+              <li>Là CEO/chủ doanh nghiệp SME, solopreneur, freelancer, chuyên gia, coach hoặc creator.</li>
+              <li>Điều hành doanh nghiệp nhỏ hoặc tự vận hành một công việc chuyên môn.</li>
+              <li>Có một việc lặp lại ít nhất hằng tuần và tối thiểu ba mẫu dữ liệu để thử.</li>
+              <li>Có quyền sử dụng dữ liệu, biết ai sẽ kiểm tra và phê duyệt đầu ra.</li>
+              <li>Sẵn sàng dành khoảng 45–60 phút mỗi ngày trong 21 ngày.</li>
+            </ul>
+          </div>
+          <div class="fit-panel fit-no">
+            <h3>Chưa phù hợp nếu bạn...</h3>
+            <ul class="minus-list">
+              <li>Muốn “bấm nút là ra doanh thu” hoặc xây nhiều Agent cùng lúc.</li>
+              <li>Chưa có công việc, tài liệu hay dữ liệu mẫu để thử.</li>
+              <li>Muốn Agent tự gửi tin, chi tiền hoặc quyết định thay người mà không qua duyệt.</li>
+              <li>Không có quyền dùng dữ liệu mình định đưa vào bài tập.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fit-note"><strong>Không yêu cầu biết code.</strong> Bạn cần máy tính, internet, một công cụ AI có thể
+          sử dụng và nơi lưu tài liệu. VPS, API hay CRM không phải điều kiện đầu vào.</p>
+      </div>
+    </section>
+
+    <section class="section safety-section" aria-labelledby="safety-title">
+      <div class="container safety-grid">
+        <div>
+          <p class="eyebrow eyebrow-on-dark">NGUYÊN TẮC KHÔNG BỎ QUA</p>
+          <h2 id="safety-title">AI làm nhanh hơn.<br><em>Người vẫn chịu trách nhiệm.</em></h2>
+          <p>Workflow tốt phải biết lúc nào không được tự làm tiếp. Vì vậy chương trình đưa nguồn dữ liệu, test case và
+            human approval vào ngay từ đầu.</p>
+        </div>
+        <div class="safety-list">
+          <div><span>01</span><strong>Nguồn dữ liệu rõ và có quyền sử dụng</strong></div>
+          <div><span>02</span><strong>Ẩn danh hoặc loại dữ liệu nhạy cảm</strong></div>
+          <div><span>03</span><strong>Test cả ca đúng, thiếu dữ liệu và ngoài phạm vi</strong></div>
+          <div><span>04</span><strong>Người phê duyệt trước hành động quan trọng</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offer-section" id="tuition" aria-labelledby="offer-title">
+      <div class="container offer-grid">
+        <div class="offer-copy">
+          <p class="eyebrow">HỌC PHÍ & ĐĂNG KÝ</p>
+          <h2 id="offer-title">Đầu tư vào <span class="text-blue">một cách làm việc</span> có thể dùng lại.</h2>
+          <p>Core Challenge tập trung vào một workflow chính: học theo nhiệm vụ, tạo đầu ra, kiểm thử và demo. Các phần
+            tích hợp nâng cao chỉ triển khai khi bạn đã có nền tảng đủ rõ.</p>
+          <ul class="offer-list">
+            <li>21 nhiệm vụ có đầu ra cụ thể</li>
+            <li>Review theo mốc ngày 7, 14 và 21</li>
+            <li>Landing, Input Form và Business Brain có nguồn</li>
+            <li>Agent v1, Workflow v1 và Run Board/CRM-lite</li>
+            <li>Test Log, ba run thật và Skill/Rule tái sử dụng</li>
+            <li>Evidence Card, demo và roadmap 30 ngày</li>
+          </ul>
+          <p class="offer-scope"><strong>Advanced Lab, không bắt buộc trong Core:</strong> VPS riêng, API, n8n/Make nâng
+            cao, payment automation, CRM đầy đủ, auto-post, hệ thống video AI nâng cao, Agent Team chạy thật và
+            Multi-Agent orchestration.</p>
+        </div>
+        <div class="price-card">
+          <div class="price-top"><span>HỌC PHÍ GIỚI THIỆU</span><span class="status-pill">ĐANG MỞ ĐĂNG KÝ</span></div>
+          <div class="price-old"><span>Học phí chính thức (từ sau giai đoạn giới thiệu)</span><del>5.000.000đ</del>
+          </div>
+          <div class="price-now"><span>Học phí hôm nay</span><strong><span
+                id="price-current-value">1.000.000</span><span>đ</span></strong></div>
+          <p class="price-increase-note" id="price-increase-note">Từ ngày mai, học phí tăng thêm
+            <strong>99.000đ</strong>. Đăng ký hôm nay để giữ mức thấp nhất.</p>
+          <div class="price-divider"></div>
+          <p>Học phí cho Core Challenge với một trong ba track. Trang chưa thu tiền trực tiếp; lịch khai giảng, hướng dẫn
+            thanh toán và chính sách hoàn/hủy cần được xác nhận qua email trước khi thanh toán.
+          </p>
+          <a class="button button-primary button-full" href="#register">Đăng ký tham gia ngay <span
+              aria-hidden="true">↗</span></a>
+          <small>Form mở email nháp; bạn cần bấm Gửi trong ứng dụng email. Hùng phản hồi để hướng dẫn thanh toán sau khi nhận được email.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div>
+          <p class="eyebrow">CÂU HỎI THƯỜNG GẶP</p>
+          <h2 id="faq-title">Điều cần rõ<br>trước khi bắt đầu.</h2>
+          <p>Nếu vẫn còn câu hỏi về việc chọn workflow, bạn có thể gửi tình huống của mình ở form cuối trang.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>"AI Agent" khác gì so với việc hỏi ChatGPT thông thường?</summary>
+            <p>Hỏi ChatGPT là bạn tự nhập lại bối cảnh mỗi lần, tự copy kết quả rồi tự làm tiếp. Một AI Agent trong
+              chương trình được gắn với nguồn dữ liệu cố định đã duyệt, đi theo các bước xử lý đã định và có điểm người
+              phê duyệt trước khi ra kết quả cuối — nên chạy lặp lại nhiều lần mà không cần giải thích lại từ đầu, và
+              người khác cũng chạy được theo đúng cách bạn thiết lập.</p>
+          </details>
+          <details>
+            <summary>"AI Agent" cụ thể nghĩa là gì?</summary>
+            <p>Bạn có thể hình dung như một quy trình được cấu hình sẵn: nhận input theo đúng cấu trúc, tự tra cứu nguồn
+              được phép dùng, xử lý theo các bước đã định, và biết báo khi thiếu dữ liệu hoặc cần người quyết định. Khác
+              với việc mở ChatGPT hỏi từng câu, Agent được thiết lập để làm đúng một việc theo cùng một cách mỗi lần.
+            </p>
+          </details>
+          <details>
+            <summary>Không biết lập trình có theo được không?</summary>
+            <p>Có thể theo Core Challenge nếu bạn có một việc lặp lại, dữ liệu mẫu và sẵn sàng thực hành. Không yêu cầu
+              viết code, VPS hay API.</p>
+          </details>
+          <details>
+            <summary>Tôi có cần mua thêm nhiều công cụ AI không?</summary>
+            <p>Không. Bạn có thể bắt đầu bằng một công cụ AI và một nơi lưu tài liệu. Chi phí công cụ trả phí, nếu có,
+              không nằm trong học phí và sẽ do bạn tự quyết định.</p>
+          </details>
+          <details>
+            <summary>Sau 21 ngày tôi có chắc chắn tăng doanh thu không?</summary>
+            <p>Không có cam kết doanh thu. Mục tiêu là xây và kiểm thử một workflow có thể chạy lại; kết quả kinh doanh
+              còn phụ thuộc vào dữ liệu, thị trường và cách triển khai.</p>
+          </details>
+          <details>
+            <summary>Tôi có phải xây cả ba track không?</summary>
+            <p>Không. Bạn chỉ chọn một track và tập trung hoàn thiện một workflow chính trong 21 ngày.</p>
+          </details>
+          <details>
+            <summary>Tôi chọn track vào thời điểm nào?</summary>
+            <p>Bạn chọn track khi đăng ký hoặc chậm nhất trong tuần đầu. Track chỉ được chốt khi workflow, dữ liệu mẫu
+              và người phê duyệt đã đủ rõ.</p>
+          </details>
+          <details>
+            <summary>Tôi có thể đổi track giữa chương trình không?</summary>
+            <p>Chỉ nên đổi trước khi Workflow Charter được PASS ở ngày 7. Sau ngày 7, việc đổi track có thể khiến toàn bộ
+              dữ liệu, Agent Spec và workflow phải làm lại.</p>
+          </details>
+          <details>
+            <summary>Landing page dùng để làm gì?</summary>
+            <p>Landing page là nơi trình bày bài toán, offer hoặc workflow, tiếp nhận input và hướng người dùng đến hành
+              động chính. Landing được sử dụng tiếp trong các nhiệm vụ traffic, feedback và tạo form.</p>
+          </details>
+          <details>
+            <summary>Thế nào là hoàn thành 100%?</summary>
+            <p>Bạn phải hoàn thành 21/21 nhiệm vụ, nộp đủ toàn bộ output bắt buộc, sửa các bài REVISE đến khi đạt PASS,
+              hoàn thành demo và nộp video feedback ngày 21.</p>
+          </details>
+          <details>
+            <summary>Nếu bài bị BLOCKED thì sao?</summary>
+            <p>BLOCKED có nghĩa là bạn đang thiếu dữ liệu, quyền truy cập, quyết định hoặc hỗ trợ kỹ thuật. Bạn cần xử lý
+              điểm chặn và nộp lại; BLOCKED không được tính là hoàn thành.</p>
+          </details>
+          <details>
+            <summary>Dữ liệu nội bộ và dữ liệu khách hàng được xử lý thế nào?</summary>
+            <p>Chỉ dùng dữ liệu mà bạn có quyền sử dụng. Ẩn danh hoặc loại dữ liệu nhạy cảm trước khi đưa vào bài tập;
+              hành động quan trọng cần người phê duyệt.</p>
+          </details>
+          <details>
+            <summary>Video feedback có bắt buộc không?</summary>
+            <p>Có. Video feedback là một phần của Verified Workflow Live Package ngày 21. Việc sử dụng video công khai
+              chỉ được thực hiện theo phạm vi consent mà bạn đã xác nhận.</p>
+          </details>
+          <details>
+            <summary>Core Challenge khác Advanced Lab như thế nào?</summary>
+            <p>Core Challenge giúp bạn hoàn thành một workflow no-code/low-code có dữ liệu, Agent, người phê duyệt, Test
+              Log và Evidence Card. VPS, API, n8n/Make nâng cao, payment, CRM đầy đủ, auto-post và Agent Team chạy thật
+              thuộc Advanced Lab.</p>
+          </details>
+          <details>
+            <summary>Học phí hiển thị hôm nay có cố định không?</summary>
+            <p>Không. Đây là học phí giới thiệu, tăng thêm 99.000đ mỗi ngày kể từ 21/09/2026 cho đến khi đạt mức chính
+              thức 5.000.000đ. Mức hiển thị ở banner đầu trang và phần Học phí được tính theo ngày ở Việt Nam; đăng ký
+              càng sớm, học phí càng thấp.</p>
+          </details>
+          <details>
+            <summary>Khi nào có lịch học và thanh toán?</summary>
+            <p>Sau khi bạn gửi email đăng ký từ form cuối trang, Hùng phản hồi qua email để xác nhận lịch khai giảng
+              theo đợt và hướng dẫn thanh toán. Chỉ điền form mà chưa bấm Gửi trong ứng dụng email thì thông tin chưa
+              được chuyển tới Hùng.</p>
+          </details>
+          <details>
+            <summary>Đã đóng học phí mà đổi ý hoặc bận đột xuất thì sao?</summary>
+            <p>Landing này chưa thu tiền. Chính sách hoàn/hủy và dời cohort chưa được công bố tại đây; hãy xác nhận các
+              điều kiện đó với Hùng qua email trước khi thanh toán.</p>
+          </details>
+          <details>
+            <summary>Thông tin tôi gửi qua form được dùng thế nào?</summary>
+            <p>Form hiện tạo một email nháp trên thiết bị của bạn; điền và bấm Gửi trong ứng dụng email là bạn hoàn tất
+              đăng ký. Thông tin được dùng để xác nhận đăng ký và phản hồi về chương trình. Không có dữ liệu nào được tự
+              động lưu trên landing này.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-ribbon-section" id="cohort-cta" aria-labelledby="cta-ribbon-title">
+      <span class="cta-ribbon-mark cta-ribbon-mark-tl" aria-hidden="true"></span>
+      <span class="cta-ribbon-mark cta-ribbon-mark-br" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta-ribbon">
+          <div class="cta-ribbon-copy">
+            <h2 id="cta-ribbon-title">Bạn còn đang chờ gì nữa?</h2>
+            <p>AI không đợi ai. Người biết dùng AI đang tiến xa hơn mỗi ngày.</p>
+          </div>
+          <a class="cta-ribbon-button" href="#register">Đăng ký tham gia ngay!</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="register" aria-labelledby="register-title">
+      <div class="container final-grid">
+        <div class="final-copy">
+          <p class="eyebrow eyebrow-on-dark">BẮT ĐẦU TỪ MỘT VIỆC THẬT</p>
+          <h2 id="register-title">Việc nào đang lặp lại trên bàn bạn mỗi tuần?</h2>
+          <p>Điền form để tạo email đăng ký, rồi bấm Gửi trong ứng dụng email. Hùng phản hồi sau khi nhận được email để
+            xác nhận lịch khai giảng và hướng dẫn thanh toán.
+          </p>
+          <div class="final-points"><span>21 ngày thực hành</span><span>1 workflow chính</span><span>Học phí tăng dần
+              mỗi ngày</span></div>
+        </div>
+        <div class="form-card">
+          <h3>Đăng ký tham gia AI Agent Business 21 Day</h3>
+          <p>Điền thông tin bên dưới. Ứng dụng email của bạn sẽ mở một bản nháp đăng ký để bạn kiểm tra và bấm Gửi.</p>
+          <form id="interest-form" aria-describedby="form-privacy">
+            <label for="full-name">Họ và tên <span aria-hidden="true">*</span></label>
+            <input id="full-name" name="name" type="text" autocomplete="name" placeholder="Tên của bạn" required
+              maxlength="100">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="ten@doanhnghiep.vn" required
+              maxlength="150">
+            <label for="role">Vai trò hiện tại</label>
+            <select id="role" name="role">
+              <option value="">Chọn nếu phù hợp</option>
+              <option>CEO / Chủ doanh nghiệp SME</option>
+              <option>Solopreneur / Freelancer</option>
+              <option>Chuyên gia / Coach</option>
+              <option>Creator</option>
+              <option>Quản lý</option>
+              <option>Khác</option>
+            </select>
+            <label for="track">Bạn muốn chọn track nào? <span aria-hidden="true">*</span></label>
+            <select id="track" name="track" required>
+              <option value="">Chọn một track</option>
+              <option>Sales Follow-up</option>
+              <option>Content &amp; Insight</option>
+              <option>Operations/SOP</option>
+              <option>Chưa chắc — cần tư vấn</option>
+            </select>
+            <label for="challenge">Một việc bạn muốn dùng AI hỗ trợ</label>
+            <textarea id="challenge" name="challenge" rows="3" maxlength="700"
+              placeholder="Ví dụ: đội ngũ hỏi lại quy trình xử lý đơn hàng mỗi ngày..."></textarea>
+            <fieldset class="form-confirmations">
+              <legend>Xác nhận trước khi đăng ký <span aria-hidden="true">*</span></legend>
+              <label class="form-check"><input name="has_work" type="checkbox" required><span>Tôi có một công việc lặp
+                  lại và tối thiểu ba mẫu dữ liệu để thực hành.</span></label>
+              <label class="form-check"><input name="complete_all" type="checkbox" required><span>Tôi hiểu chương trình
+                  yêu cầu hoàn thành 21/21 nhiệm vụ.</span></label>
+              <label class="form-check"><input name="video_required" type="checkbox" required><span>Tôi hiểu video
+                  feedback ngày 21 là đầu ra bắt buộc.</span></label>
+            </fieldset>
+            <button class="button button-primary button-full" type="submit">Đăng ký tham gia <span
+                aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="form-privacy" id="form-privacy"><strong>Quyền riêng tư:</strong> thông tin chỉ rời thiết bị khi bạn
+            bấm Gửi trong ứng dụng email. Bấm Gửi là bạn hoàn tất đăng ký; landing không tự lưu lead trên máy chủ nào
+            khác.</p>
+          <p class="form-small">Nếu ứng dụng email không mở, bạn có thể đăng ký trực tiếp bằng cách gửi email tới <a
+              href="mailto:hungtrinhth@gmail.com?subject=Quan%20tam%20AI%20Agent%20Business%2021%20Day">hungtrinhth@gmail.com</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>AI AGENT BUSINESS 21 DAY</strong>
+        <p>Chương trình thực hành cùng Hùng Trịnh — AI thực chiến cho công việc thật của CEO và SME.</p>
+      </div>
+      <div><span>CHƯƠNG TRÌNH</span><a href="#roadmap">Lộ trình 21 ngày</a><a href="#outcomes">Đầu ra học viên</a><a
+          href="#faq">Câu hỏi thường gặp</a></div>
+      <div><span>LIÊN HỆ</span><a href="mailto:hungtrinhth@gmail.com">hungtrinhth@gmail.com</a>
+        <p>Chương trình cá nhân của Trịnh Minh Hùng.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 AI Agent Business 21 Day · Hùng Trịnh</span><span>Một việc thật ·
+        một workflow rõ ràng</span></div>
+  </footer>
+  <aside class="scroll-cta" aria-label="Đăng ký tham gia ngay">
+    <div class="scroll-cta-copy"><strong>Bạn còn đang chờ gì nữa?</strong><span>Đưa AI vào một workflow thật, có thể
+        kiểm thử và dùng lại.</span></div>
+    <a href="#register">Đăng ký tham gia ngay <span aria-hidden="true">↗</span></a>
+  </aside>
+</body>
+
+</html>
